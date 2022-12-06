@@ -597,7 +597,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163259393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 9.5}
+  m_LocalPosition: {x: 0, y: 0, z: 8.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 522438577}
@@ -2709,7 +2709,6 @@ GameObject:
   - component: {fileID: 1014694512}
   - component: {fileID: 1014694515}
   - component: {fileID: 1014694514}
-  - component: {fileID: 1014694513}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2725,25 +2724,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1014694511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.071, y: 0.727, z: -1.687}
+  m_LocalPosition: {x: 0.071, y: 0.2, z: -1.687}
   m_LocalScale: {x: 0.31515, y: 0.31515, z: 0.31515}
   m_Children: []
   m_Father: {fileID: 543450651593010872}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1014694513
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1014694511}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1014694514
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2870,7 +2856,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091683476}
   m_LocalRotation: {x: 0.53383046, y: -0, z: -0, w: 0.84559155}
-  m_LocalPosition: {x: 0, y: 19.3, z: -11.8}
+  m_LocalPosition: {x: 0, y: 18.81, z: -10.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3551,6 +3537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1409470780}
   - component: {fileID: 1409470779}
+  - component: {fileID: 1409470781}
   m_Layer: 0
   m_Name: WaterReflectionSceneCamera
   m_TagString: Untagged
@@ -3608,13 +3595,22 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409470778}
-  m_LocalRotation: {x: 0.6251375, y: 0.002108285, z: 0.0016905841, w: -0.78050995}
-  m_LocalPosition: {x: 0.041730348, y: -37.123352, z: -17.240849}
+  m_LocalRotation: {x: 0.52464235, y: 0.0061240783, z: 0.0037760593, w: -0.8512924}
+  m_LocalPosition: {x: -0.5938697, y: -27.478886, z: -11.873631}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &1409470781
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409470778}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1444511265 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7712363582244917158, guid: f87309a56484a29438a0ab10cf85bac3, type: 3}
@@ -5249,6 +5245,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -2.57
       objectReference: {fileID: 0}
+    - target: {fileID: 1059908745749132066, guid: 28482a433ab742448920e0796d7eec61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.31
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1059908745349527904, guid: 28482a433ab742448920e0796d7eec61, type: 3}
     - {fileID: 1059908745349527934, guid: 28482a433ab742448920e0796d7eec61, type: 3}
@@ -5409,7 +5409,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e60a57dd9d12584d87c108e62800fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 1444511265}
+  Players:
+  - {fileID: 4381822796071993632}
+  - {fileID: 1444511265}
   poiUpPosition: {fileID: 1014694512}
 --- !u!1 &2108814696
 GameObject:
@@ -5839,7 +5841,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132147939783682}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 5, z: -11.11}
+  m_LocalPosition: {x: 0, y: 3.51, z: -11.11}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1014694512}
