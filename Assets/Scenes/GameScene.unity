@@ -1639,7 +1639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7712363582244917159, guid: f87309a56484a29438a0ab10cf85bac3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.72
+      value: 4.1
       objectReference: {fileID: 0}
     - target: {fileID: 7712363582244917159, guid: f87309a56484a29438a0ab10cf85bac3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3595,8 +3595,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409470778}
-  m_LocalRotation: {x: 0.52464235, y: 0.0061240783, z: 0.0037760593, w: -0.8512924}
-  m_LocalPosition: {x: -0.5938697, y: -27.478886, z: -11.873631}
+  m_LocalRotation: {x: -0.25251517, y: 0.22701755, z: 0.06107471, w: 0.9385995}
+  m_LocalPosition: {x: -3.2512887, y: -11.397135, z: -19.373053}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5861,9 +5861,10 @@ GameObject:
   m_Component:
   - component: {fileID: 543450651593010872}
   - component: {fileID: 913883440}
+  - component: {fileID: 919132147939783683}
   - component: {fileID: 2089933200}
   - component: {fileID: 919132147939783684}
-  - component: {fileID: 919132147939783683}
+  - component: {fileID: 919132147939783685}
   m_Layer: 0
   m_Name: poi
   m_TagString: Untagged
@@ -5898,6 +5899,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1593922674}
   speed: 2
+--- !u!114 &919132147939783685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147939783682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 319460b7f6618b74f9391fb7e0c5fa86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Players:
+  - {fileID: 4381822796071993632}
+  - {fileID: 1444511265}
+  isChatching: 0
+  interval: 0.3
+  startCount: 3
+  maxClickCount: 10
+  clickCount: 0
+  clickCountRecord: 0
+  isCounting: 0
+  isMashing: 0
+  second: 0
 --- !u!23 &4233821792950757558
 MeshRenderer:
   m_ObjectHideFlags: 0
