@@ -10,14 +10,6 @@ public class PoiMove : MonoBehaviour
     [SerializeField]
     private float speed;            // ˆÚ“®‘¬“x
 
-    /// <summary>
-    /// ‰Šú‰»
-    /// </summary>
-    void Start()
-    {
-  
-    }
-
     private void Update()
     {
         // target ‚ÉŒü‚©‚Á‚ÄˆÚ“®‚·‚é
